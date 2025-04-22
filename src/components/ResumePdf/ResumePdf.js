@@ -33,7 +33,7 @@ Font.register({
 
 const styles = StyleSheet.create({
   page: {
-    padding: 30,
+    padding: 20,
     fontFamily: fontSettings.regularFont,
     display: 'flex',
     flexDirection: 'column',
@@ -82,7 +82,7 @@ function ResumePdf() {
 
   return (
     <Document>
-      <Page size={{ width: 595, height: 1010 }} style={styles.page}>
+      <Page size={{ width: 595, height: 985 }} style={styles.page}>
         <Header personal={personal} links={links}/>
         { personal.summary !== '' && <View style={styles.summary}><Text>{ personal.summary }</Text></View>}
         { pdfSections }

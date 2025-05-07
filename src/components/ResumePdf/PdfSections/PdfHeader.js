@@ -18,7 +18,10 @@ const styles = StyleSheet.create({
     fontWeight: 700,
   },
   title: {
-    fontSize: '12px',
+    fontSize: '18px',
+    fontWeight: 700,
+    fontFamily: fontSettings.regularFont,
+
   },
   links: {
     display: 'flex',
@@ -70,7 +73,7 @@ function Links({ email, links }) {
 function HeaderSecondLine({ phone, address }) {
   return (
     <View style={styles.links}>
-      <Text>{ phone }</Text>
+      <Text style={styles.title}>Ph: { phone }</Text>
       <Text>{ address }</Text>
     </View>
   )

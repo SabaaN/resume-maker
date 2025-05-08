@@ -135,8 +135,8 @@ function Projects() {
     <div className="project-container">
       <div className="project-header">
         <h4 className="project-indicator">Project { currentIndex + 1 }</h4>
-        <SectionNav delCdtn={currentIndex > 0} backCdtn={currentIndex > 0} nextCdtn={currentIndex < projects.length - 1 && currentIndex < 3}
-          addCdtn={currentIndex === projects.length - 1 && currentIndex < 3} deleteFn={deleteProject}
+        <SectionNav delCdtn={currentIndex > 0} backCdtn={currentIndex > 0} nextCdtn={currentIndex < projects.length - 1 && currentIndex < 7}
+          addCdtn={currentIndex === projects.length - 1 && currentIndex < 7} deleteFn={deleteProject}
           navFn={setCurrentIndex} addFn={addProject} currentIndex={currentIndex} />
       </div>
       <ProjectForm index={currentIndex}/>
